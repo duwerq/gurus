@@ -31,7 +31,7 @@ custom:
         field: getUser
       - dataSource: UsersTable
         type: Query
-        field: listUser
+        field: listUsers
       - dataSource: UsersTable
         type: Mutation
         field: createUser
