@@ -4,7 +4,6 @@ service: appsync-api
 
 plugins:
   - serverless-appsync-plugin
-  # - aws-amplify-serverless-plugin
 provider:
   name: aws
   region: "us-east-1"
@@ -14,10 +13,6 @@ provider:
 custom:
   accountId: ${param:ACCOUNT_ID}
   api: gurus-api-${self:provider.stage}
-  # amplify:
-  #   - filename: ./amplify/aws-exports.js
-  #     type: javascript
-  #     appClient: ReactNativeUserPoolClient
 
   appSync:
     name: ${self:custom.api}
