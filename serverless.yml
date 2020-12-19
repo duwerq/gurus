@@ -25,6 +25,22 @@ custom:
       loggingRoleArn: { Fn::GetAtt: [AppSyncLoggingServiceRole, Arn] }
       level: NONE
     schema: ./schema.graphql
+    mappingTemplates:
+      - dataSource: UsersTable
+        type: Query
+        field: getUser
+      - dataSource: UsersTable
+        type: Query
+        field: listUser
+      - dataSource: UsersTable
+        type: Mutation
+        field: createUser
+      - dataSource: UsersTable
+        type: Mutation
+        field: updateUser
+      - dataSource: UsersTable
+        type: Mutation
+        field: deleteUser
     dataSources:
       - type: AMAZON_DYNAMODB
         name: UsersTable
