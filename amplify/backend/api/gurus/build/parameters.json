@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "gurus",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-gurus-dev-111452-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/3ff47f5b2403955b64b6f644345735bdb112a7c6"
+}

@@ -82,4 +82,4 @@ resources:
                     - "logs:PutLogEvents"
                   Effect: Allow
                   Resource:
-                    - "arn:aws:logs:#{AWS::Region}:#{AWS::AccountId}:*"
+                    - "arn:aws:logs:${self:provider.region}:${self:custom.accountId}:*"
