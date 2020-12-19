@@ -4,6 +4,7 @@ service: appsync-api
 
 plugins:
   - serverless-appsync-plugin
+
 provider:
   name: aws
   region: "us-east-1"
