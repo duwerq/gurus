@@ -21,7 +21,7 @@ custom:
     apiKeys:
       - name: ${param:API_KEY}
         description: "AppSync Api Key"
-        expiresAfter: 365d # api key life time
+        expiresAfter: 365d
     logConfig:
       loggingRoleArn: { Fn::GetAtt: [AppSyncLoggingServiceRole, Arn] }
       level: NONE
