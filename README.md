@@ -11,8 +11,8 @@ $ yarn
 2. This template is tightly integrated with Serverless Pro for deployments. There are three env variables that must be set for each stage of deployment.
 
 - STAGE
-- ACCOUNT_ID
-- API_KEY
+- ACCOUNT_ID (AWS account id)
+- API_KEY  (Can really be anything but a randomly generated key would be ideal)
 
 ![](https://user-images.githubusercontent.com/14824061/102717412-1ccff480-42b0-11eb-9d81-1cbf5547d4e1.png)
   
